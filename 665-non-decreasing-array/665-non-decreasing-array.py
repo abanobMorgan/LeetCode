@@ -6,7 +6,7 @@ class Solution:
                 if validation_check:
                     return False
                 validation_check = True
-                print(validation_check)
+                #print(validation_check)
                 if i>=2 and nums[i-2]>nums[i]:
                     nums[i]=nums[i-1]                       
         return True
