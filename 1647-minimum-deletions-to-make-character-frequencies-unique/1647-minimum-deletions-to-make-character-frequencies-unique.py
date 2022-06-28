@@ -16,7 +16,7 @@ class Solution:
                 delete_count += frequency[freq] - max_freq_allowed
                 frequency[freq] = max_freq_allowed
 
-            
+            # check if the current freq is equals to 0 then sum all coming elements and return the value
             if frequency[freq] == 0 :
                 delete_count += sum(frequency[freq:])
                 return delete_count
