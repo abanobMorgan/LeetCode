@@ -1,5 +1,7 @@
 class Solution:
     def fib(self, n: int) -> int:
-        if n == 0: return 0
-        elif n == 1: return 1
-        return self.fib(n-1) + self.fib(n- 2)
+        five = sqrt(5)
+        fi = (1 + five)/2 
+        alph = (1-five)/2
+
+        return int(( fi**n -  alph**n )/  five)
