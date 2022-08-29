@@ -7,8 +7,8 @@ class Solution:
             
             while q:
                 row, col = q.popleft()
-                lst = [(0,1),(0,-1),(-1,0),(1,0)]
-                for dr, dc in lst:
+                dirctions = [(0,1),(0,-1),(-1,0),(1,0)]
+                for dr, dc in dirctions:
                     r, c = row + dr, col + dc
                     if ((r >= 0 ) and c >=0 and
                         ( r<len(grid)) and 
